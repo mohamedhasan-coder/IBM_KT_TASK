@@ -94,7 +94,8 @@ GET /api/students
 - If no students are added → returns `[]`
 
 ### Screenshot
-![GET Students Screenshot](screenshots/get_students.png)
+![GET Students Screenshot](./screenshots/get_students.png)
+
 
 ---
 
