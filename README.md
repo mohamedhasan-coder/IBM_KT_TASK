@@ -1,162 +1,243 @@
-# Student Management API
+# Student Management System (MERN Stack)
 
-A simple **RESTful Student Management API** built using **Node.js** and **Express.js**.  
-This API supports **CRUD operations** (Create, Read, Update, Delete) on student records and can be tested using **Postman**.
+A simple **Student Management System** built using the **MERN stack**.  
+This project includes a **Node.js + Express REST API (Backend)** and a **React.js Frontend with Dashboard, Sidebar, and Navbar** to perform complete **CRUD operations** on student data.
+
+Developed as part of **IBM Internship – Day 3 Knowledge Transfer (KT) Task**.
 
 ---
 
 ## Features
+
+### Backend (API)
 - Add new students
 - View all students
 - Update student details
 - Delete students
-- JSON-based API
-- Beginner-friendly
+- RESTful API
+- Tested using Postman
+
+### Frontend (React)
+- Dashboard summary
+- Add / Edit / Delete students
+- Sidebar & Navbar layout
+- Responsive UI
+- Connected to backend API
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
+
+### Backend
 - Node.js
 - Express.js
+- JavaScript
 - Postman
+- CORS
+
+### Frontend
+- React.js (Vite)
+- CSS
+- Fetch API
 
 ---
 
 ## Project Structure
 
-StudentAPI
-│── server.js
-│── studentRoutes.js
-│── package.json
-│── package-lock.json
-└── node_modules
-
+```text
+IBM_KT_TASK/
+│
+├── Student_Management_System/
+│   ├── Backend/
+│   │   ├── server.js
+│   │   ├── studentRoutes.js
+│   │   ├── package.json
+│   │   └── package-lock.json
+│   │
+│   ├── Frontend/
+│   │   ├── public/
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── StudentForm.jsx
+│   │   │   │   └── StudentList.jsx
+│   │   │   ├── App.jsx
+│   │   │   ├── App.css
+│   │   │   └── main.jsx
+│   │   ├── index.html
+│   │   ├── vite.config.js
+│   │   └── package.json
+│   │
+│   ├── screenshots/
+│   │   ├── get_students.png
+│   │   ├── post_student.png
+│   │   ├── put_student.png
+│   │   └── delete_student.png
+│   │
+│   └── README.md
+│
+├── IBM_KT_Task_4/
+└── KT_TASK_3.pdf
+```
 
 ---
 
-## Installation & Setup
+## ⚙️ Installation & Setup
 
-### 1. Install Node.js
-Verify installation:
+### Prerequisites
+
+Check Node.js and npm:
 ```bash
 node -v
 npm -v
 ```
 
-### 2.  Install Dependencies
+---
 
-Run inside the project folder:
+### Backend Setup
 
-```
+```bash
+cd Student_Management_System/Backend
 npm install
-```
-
-### 3. start the Server
-
-```
 node server.js
 ```
 
-You Should See: 
-
+**Expected Output:**
 ```
 Student Server running on port 5000
 ```
 
+---
 
-## API Endpoints Explanation
+### Frontend Setup
 
-This API allows performing CRUD (Create, Read, Update, Delete) operations on student data using HTTP methods through Postman.
+```bash
+cd Student_Management_System/Frontend
+npm install
+npm run dev
+```
+
+Frontend runs at:
+```
+http://localhost:5173
+```
 
 ---
 
-## 🌐 Base URL
+## API Base URL
 
-```
-
+```text
 http://localhost:5000/api
-
 ```
 
+---
+
+## API Endpoints
 
 ---
 
-# 1.  GET – Fetch All Students
+### GET – Fetch All Students
 
-### Endpoint
-
+```text
 GET /api/students
+```
 
-
-### Explanation
-- Used to fetch all student records
+**Description:**
+- Fetches all student records
 - Returns an array of students
-- If no students are added → returns `[]`
+- If no students → returns `[]`
 
-### Screenshot
-![GET Students Screenshot](StudentAPI/screenshots/get_students.png)
-
+Screenshot:  
+`screenshots/get_students.png`
 
 ---
 
-# 2. POST – Add New Student
+### POST – Add New Student
 
-### Endpoint
-
+```text
 POST /api/students
+```
 
-
-### Explanation
-- Adds a new student into the system
-- Data must be sent in JSON format
-- Stored in memory
-
-### Request Body
+**Request Body (JSON):**
 ```json
 {
- "id": 1,
- "name": "Student Name",
- "department": "CSE",
- "year": 3
+  "name": "Student Name",
+  "department": "CSE",
+  "year": 3
 }
 ```
-### Screen Shot
-![POST Students Screenshot](StudentAPI/screenshots/post_student.png)
 
+Screenshot:  
+`screenshots/post_student.png`
 
-# 3. PUT – Update Student
+---
 
-### Endpoint
+### PUT – Update Student
 
+```text
 PUT /api/students/:id
+```
 
-### Explanation
-- Used to update student details
-
-- ID is passed in URL
-
-- Only changed fields need to be sent
-
-### Request Body
-
+**Request Body (JSON):**
+```json
 {
- "year": 4
+  "year": 4
 }
+```
 
+Screenshot:  
+`screenshots/put_student.png`
 
-### Screen Shot
-![PUT Students Screenshot](StudentAPI/screenshots/put_student.png)
+---
 
-# 4. Delete – Delete Student
+### DELETE – Delete Student
 
-### Endpoint
-
+```text
 DELETE /api/students/:id
+```
 
-### Explanation
+**Description:**
 - Deletes student using ID
+- Removes record permanently
 
-- Removes record permanently from memory
+Screenshot:  
+`screenshots/delete_student.png`
 
-### Screen Shot
-![DELETE Students Screenshot](StudentAPI/screenshots/delete_student.png)
+---
+
+## Frontend Dashboard
+
+The dashboard displays:
+- Total students count
+- Departments count
+- Student management table
+- Add / Edit / Delete functionality
+
+All data is fetched dynamically from the backend API.
+
+---
+
+## Learning Outcomes
+
+- REST API development using Express.js
+- CRUD operations
+- React state management
+- Component-based UI design
+- CORS handling
+- MERN project structuring
+
+---
+
+## GitHub Repository
+
+🔗 Repository Link:  
+https://github.com/mohamedhasan-coder/IBM_KT_TASK.git
+
+---
+
+## Conclusion
+
+This project successfully demonstrates a **full MERN stack Student Management System** with complete CRUD functionality, dashboard UI, and backend integration.  
+It is suitable for **IBM Internship evaluation, KT submission, and beginner-to-intermediate interviews**.
