@@ -4,7 +4,7 @@ const studentRoutes = require("./studentRoutes");
 
 const app = express();
 
-// ✅ MIDDLEWARE
+// 
 app.use(cors());              // 🔥 FIX CORS
 app.use(express.json());      // Parse JSON
 
