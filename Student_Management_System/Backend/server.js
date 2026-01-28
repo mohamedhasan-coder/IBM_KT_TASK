@@ -11,7 +11,7 @@ app.use(express.json());      // Parse JSON
 // ROUTES
 app.use("/api", studentRoutes);
 
-// ✅ SERVER
+// SERVER
 app.listen(5000, () => {
   console.log("Student Server running on port 5000");
 });
