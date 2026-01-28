@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());              // FIX CORS
 app.use(express.json());      // Parse JSON
 
-// ✅ ROUTES
+// ROUTES
 app.use("/api", studentRoutes);
 
 // ✅ SERVER
