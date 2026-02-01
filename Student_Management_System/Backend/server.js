@@ -14,4 +14,4 @@ app.use("/api", studentRoutes);
 // SERVER
 app.listen(5000, () => { 
   console.log("Student Server running on port 5000");
-});
+}); 
