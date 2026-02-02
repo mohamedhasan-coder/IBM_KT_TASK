@@ -13,7 +13,7 @@ Developed as part of **IBM Internship – Day 3 Knowledge Transfer (KT) Task**.
 - Add new students
 - View all students
 - Update student details
-- Delete students
+- Delete students 
 - RESTful API
 - Tested using Postman
 
