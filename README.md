@@ -6,7 +6,7 @@ This project includes a **Node.js + Express REST API (Backend)** and a **React.j
 Developed as part of **IBM Internship – Day 3 Knowledge Transfer (KT) Task**.
 
 ---
-
+ 
 ## Features 
 
 ### Backend (API)
