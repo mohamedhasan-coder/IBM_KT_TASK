@@ -1,4 +1,4 @@
-# Student Management System (MERN Stack) 
+# Student Management System (MERN Stack)  
 
 A simple **Student Management System** built using the **MERN stack**.  
 This project includes a **Node.js + Express REST API (Backend)** and a **React.js Frontend with Dashboard, Sidebar, and Navbar** to perform complete **CRUD operations** on student data.
