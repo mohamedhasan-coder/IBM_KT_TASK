@@ -11,7 +11,7 @@ Developed as part of **IBM Internship – Day 3 Knowledge Transfer (KT) Task**.
  
 ### Backend (API) 
 - Add new students
-- View all students 
+- View all students  
 - Update student details
 - Delete students  
 - RESTful API
