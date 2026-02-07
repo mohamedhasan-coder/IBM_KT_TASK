@@ -9,7 +9,7 @@ Developed as part of **IBM Internship – Day 3 Knowledge Transfer (KT) Task**.
  
 ## Features 
  
-### Backend (API)
+### Backend (API) 
 - Add new students
 - View all students 
 - Update student details
